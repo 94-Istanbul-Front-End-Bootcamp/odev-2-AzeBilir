@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hafta 2 Gun 2</title>
+    <style>
+      .bold {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <button onclick="fetchData()">Getir</button></br></br>
+      <!--Todo-->
+
+      <div id="inputs" style="display: none">
+        18 yaşından büyük kişileri görmek için işaretleyiniz
+        <input type="checkbox" id="checkboxAge" onclick="myFunction()" /></br></br>
+        Ara:<input id="inputName" placeholder="İsminizin İlk Harfini Giriniz" maxlength="1"/></br></br>
+       </div>
+
+      <button
+        onclick="filterData('isActive'); filterDataAge('age'); filterDataName('name')"
+        id="filterButton" 
+        style="display: none"
+      >
+        Filtrele
+      </button></br>
+
+     
+      <ul class="list"></ul>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
